@@ -1,8 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { filters } from './store/products'
 
 export function Products() {
-	const { data } = useSelector((state) => state.products)
+	const data = useSelector(filters)
 
 	return (
 		<>
